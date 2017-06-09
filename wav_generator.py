@@ -15,7 +15,6 @@ class WhiteNoiseGenerator(Generator):
         return parser
 
     def generate(self):
-        print self, self.args
         wav = wave.open(self.args.output, 'w')
         wav.setparams((1, SAMPLE_SIZE, RATE, 0, 'NONE', 'not compressed'))
 
